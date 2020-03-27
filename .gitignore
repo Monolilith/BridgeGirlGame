@@ -2,16 +2,16 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Mm]emoryCaptures/
+/Bridge Girl Game/[Ll]ibrary/
+/Bridge Girl Game/[Tt]emp/
+/Bridge Girl Game/[Oo]bj/
+/Bridge Girl Game/[Bb]uild/
+/Bridge Girl Game/[Bb]uilds/
+/Bridge Girl Game/[Ll]ogs/
+/Bridge Girl Game/[Mm]emoryCaptures/
 
 # Never ignore Asset meta data
-!/[Aa]ssets/**/*.meta
+!/Bridge Girl Game/[Aa]ssets/**/*.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
