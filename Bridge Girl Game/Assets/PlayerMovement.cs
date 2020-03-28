@@ -15,18 +15,20 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("Script running!");
         Rigid = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
         moving();
         Jumping();
         Debug.Log(health);
     }
 
-    void moving()
+    public void moving()
     {
         z = Input.GetAxis("Vertical") * speed;
        
@@ -41,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
         //Go left
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A) )
         {
+            Debug.Log("Left?");
             transform.Translate(Vector3.left * speed * Time.deltaTime);
         }
 
