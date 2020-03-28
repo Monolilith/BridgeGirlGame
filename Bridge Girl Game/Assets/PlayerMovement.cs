@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     //related to Dashing
     public float BaseSpeed;
-    public float DashSpeed = 2;
+    public float DashSpeed = 10;
     public bool CanDash = true;
 
     public bool CanGetHurt;
@@ -90,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
       
 
         //Dashing Input
-        if (Input.GetKey(KeyCode.X) && CanDash == true)
+        if (Input.GetKey(KeyCode.LeftShift) && CanDash == true)
         {
             CanDash = false;
             CanGetHurt = false;
@@ -110,7 +110,7 @@ public class PlayerMovement : MonoBehaviour
        
 
         speed = DashSpeed;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.05f);
         speed = BaseSpeed;
         CanGetHurt = true;
         yield break;
