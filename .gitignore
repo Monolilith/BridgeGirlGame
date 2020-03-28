@@ -59,7 +59,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 #Wwise
-Bridge Girl Game/Bridge Girl Game_WwiseProject/.cache
-Bridge Girl Game/Bridge Girl Game_WwiseProject/.akd
-Bridge Girl Game/Bridge Girl Game_WwiseProject/.validationcache
-Bridge Girl Game/Bridge Girl Game_WwiseProject/.wem
+Bridge Girl Game/Bridge Girl Game_WwiseProject/*.cache
+Bridge Girl Game/Bridge Girl Game_WwiseProject/*.akd
+Bridge Girl Game/Bridge Girl Game_WwiseProject/*.validationcache
+Bridge Girl Game/Bridge Girl Game_WwiseProject/*.wem
