@@ -8,11 +8,9 @@ public class PlayerMovement1 : MonoBehaviour
     public float speed;
     private Rigidbody rb;
     private SpriteRenderer sr;
-    private Sprite[] sprites;
-    private string path = "";
-    private int currentSprite = 0;
-    public bool isOnGround;
-    public float jumpForce;
+    private Sprite[] sprites = new Sprite[4];
+    private string[] sprite_names = { "proto girl forward", "proto girl backwards", "proto girl right", "proto girl left" };
+
     public int health = 20;
     // Start is called before the first frame update
     void Start()
@@ -21,7 +19,12 @@ public class PlayerMovement1 : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         sr = GetComponent<SpriteRenderer>();
 
-        sprites = Resources.LoadAll<Sprite>(path);
+        for (int i = 0;i < 4;i++)
+        {
+
+            sprites[i] = Resources.Load<Sprite>(sprite_names[i]);
+
+        }
     }
 
     // Update is called once per frame
@@ -29,25 +32,25 @@ public class PlayerMovement1 : MonoBehaviour
     {
 
         Moving();
-        Jumping();
 
     }
 
     public void Moving()
     {
 
-        //Go left
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
 
             transform.Translate(Vector3.left * speed * Time.deltaTime);
-            currentSprite += 1;
+
+            sr.sprite = sprites[3];
         }
 
-        //Go right
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector3.right * speed * Time.deltaTime);
+
+            sr.sprite = sprites[2];
         }
 
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
@@ -55,6 +58,7 @@ public class PlayerMovement1 : MonoBehaviour
 
             transform.Translate(Vector3.forward * speed * Time.deltaTime);
 
+            sr.sprite = sprites[1];
         }
 
         if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
@@ -62,30 +66,11 @@ public class PlayerMovement1 : MonoBehaviour
 
             transform.Translate(Vector3.back * speed * Time.deltaTime);
 
-        }
+            sr.sprite = sprites[0];
 
-        sr.sprite = sprites[currentSprite];
+        }
 
 
     }
 
-    public void Jumping()
-    {
-
-        if (Input.GetKey(KeyCode.Space) && isOnGround)
-        {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isOnGround = false;
-            Debug.Log("jump");
-        }
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Ground")
-        {
-            isOnGround = true;
-
-        }
-    }
 }
