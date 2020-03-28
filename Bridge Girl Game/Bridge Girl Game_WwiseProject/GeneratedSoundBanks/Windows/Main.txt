@@ -1,0 +1,12 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2557777556	Main_Theme			\Default Work Unit\Main_Theme	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	305312099	Main_Intro_140bpm_4-4_L5_P1	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Windows\SFX\Main_Intro_140bpm_4-4_L5_P1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main_Theme\Main_Intro_140bpm_4-4_L5_P1\Main_Intro_140bpm_4-4_L5_P1		1689732
+	431903860	Transition_to_Arena_140bpm_4-4_L1	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Windows\SFX\Transition_to_Arena_140bpm_4-4_L1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main_Theme\Transition_to_Arena_140bpm_4-4_L1\Transition_to_Arena_140bpm_4-4_L1		478864
+	502220271	A1_A2	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Windows\SFX\Main_A2_140bpm_4-4_L16_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main_Theme\Theme_A\A1_A2		5140860
+	639032438	Corridor_140bpm_4-4_L4	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Windows\SFX\Corridor_140bpm_4-4_L4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main_Theme\Corridor_140bpm_4-4_L4\Corridor_140bpm_4-4_L4		1386064
+	975185599	A1_A2	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Windows\SFX\Main_A1_140bpm_4-4_L16_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main_Theme\Theme_A\A1_A2		5140872
+	989594269	B1_B2	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Windows\SFX\Main_B1_140bpm_4-4_L16_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main_Theme\Theme_B\B1_B2		4914060
+	1016860185	B1_B2	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Windows\SFX\Main_B2_140bpm_4-4_L16_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main_Theme\Theme_B\B1_B2		5140860
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2557777556" Name="Main_Theme" ObjectPath="\Events\Default Work Unit\Main_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="305312099" Language="SFX">
+							<ShortName>Main_Intro_140bpm_4-4_L5_P1.wav</ShortName>
+							<Path>SFX\Main_Intro_140bpm_4-4_L5_P1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="431903860" Language="SFX">
+							<ShortName>Transition_to_Arena_140bpm_4-4_L1.wav</ShortName>
+							<Path>SFX\Transition_to_Arena_140bpm_4-4_L1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="502220271" Language="SFX">
+							<ShortName>Main_A2_140bpm_4-4_L16.wav</ShortName>
+							<Path>SFX\Main_A2_140bpm_4-4_L16_D79FB2B7.wem</Path>
+						</File>
+						<File Id="639032438" Language="SFX">
+							<ShortName>Corridor_140bpm_4-4_L4.wav</ShortName>
+							<Path>SFX\Corridor_140bpm_4-4_L4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="975185599" Language="SFX">
+							<ShortName>Main_A1_140bpm_4-4_L16.wav</ShortName>
+							<Path>SFX\Main_A1_140bpm_4-4_L16_D79FB2B7.wem</Path>
+						</File>
+						<File Id="989594269" Language="SFX">
+							<ShortName>Main_B1_140bpm_4-4_L16.wav</ShortName>
+							<Path>SFX\Main_B1_140bpm_4-4_L16_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1016860185" Language="SFX">
+							<ShortName>Main_B2_140bpm_4-4_L16.wav</ShortName>
+							<Path>SFX\Main_B2_140bpm_4-4_L16_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="305312099" Language="SFX">
+					<ShortName>Main_Intro_140bpm_4-4_L5_P1.wav</ShortName>
+					<Path>SFX\Main_Intro_140bpm_4-4_L5_P1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="431903860" Language="SFX">
+					<ShortName>Transition_to_Arena_140bpm_4-4_L1.wav</ShortName>
+					<Path>SFX\Transition_to_Arena_140bpm_4-4_L1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="502220271" Language="SFX">
+					<ShortName>Main_A2_140bpm_4-4_L16.wav</ShortName>
+					<Path>SFX\Main_A2_140bpm_4-4_L16_D79FB2B7.wem</Path>
+				</File>
+				<File Id="639032438" Language="SFX">
+					<ShortName>Corridor_140bpm_4-4_L4.wav</ShortName>
+					<Path>SFX\Corridor_140bpm_4-4_L4_D79FB2B7.wem</Path>
+				</File>
+				<File Id="975185599" Language="SFX">
+					<ShortName>Main_A1_140bpm_4-4_L16.wav</ShortName>
+					<Path>SFX\Main_A1_140bpm_4-4_L16_D79FB2B7.wem</Path>
+				</File>
+				<File Id="989594269" Language="SFX">
+					<ShortName>Main_B1_140bpm_4-4_L16.wav</ShortName>
+					<Path>SFX\Main_B1_140bpm_4-4_L16_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1016860185" Language="SFX">
+					<ShortName>Main_B2_140bpm_4-4_L16.wav</ShortName>
+					<Path>SFX\Main_B2_140bpm_4-4_L16_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
