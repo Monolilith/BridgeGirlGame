@@ -11,13 +11,24 @@ public class PlayerMovement : MonoBehaviour
     private Sprite[] sprites = new Sprite[4];
     private string[] sprite_names = { "proto girl forward", "proto girl backwards", "proto girl right", "proto girl left" };
 
-    public int health = 20;
+    public int health = 5;
+
+    //related to Dashing
+    public float BaseSpeed;
+    public float DashSpeed = 2;
+    public bool CanDash = true;
+
+    public bool CanGetHurt;
+
     // Start is called before the first frame update
     void Start()
     {
+        //Base Speed Before Dashing
+        BaseSpeed = speed;
+
         Debug.Log("Script running!");
         rb = GetComponent<Rigidbody>();
-        sr = GetComponent<SpriteRenderer>();
+        sr = GetComponentInChildren<SpriteRenderer>();
 
         for (int i = 0;i < 4;i++)
         {
@@ -25,14 +36,16 @@ public class PlayerMovement : MonoBehaviour
             sprites[i] = Resources.Load<Sprite>(sprite_names[i]);
 
         }
+
+       
     }
 
     // Update is called once per frame
-    public void Update()
+   void Update()
     {
-
+        DashInput();
         Moving();
-
+        
     }
 
     public void Moving()
@@ -68,6 +81,55 @@ public class PlayerMovement : MonoBehaviour
 
             sr.sprite = sprites[0];
 
+        }
+
+    }
+
+    public void DashInput()
+    {
+      
+
+        //Dashing Input
+        if (Input.GetKey(KeyCode.X) && CanDash == true)
+        {
+            CanDash = false;
+            CanGetHurt = false;
+            DashX();
+            StartCoroutine(CoolDown());
+        }
+    }
+
+    public void DashX()
+    {
+
+        StartCoroutine(Dash());
+    }
+
+    IEnumerator Dash()
+    {
+       
+
+        speed = DashSpeed;
+        yield return new WaitForSeconds(0.5f);
+        speed = BaseSpeed;
+        CanGetHurt = true;
+        yield break;
+    }
+
+    IEnumerator CoolDown()
+    {
+        yield return new WaitForSeconds(5f);
+        CanDash = true;
+        yield break;
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+      
+        if (other.gameObject.tag == "enemy" && CanGetHurt == true)
+        {
+
+            health -= 1;
         }
 
 
