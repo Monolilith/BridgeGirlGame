@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
 
         moving();
         Jumping();
-        Debug.Log(health);
+        //Debug.Log(health);
     }
 
     public void moving()
