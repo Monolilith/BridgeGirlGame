@@ -4,78 +4,73 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float x;
-    public float z;
+
     public float speed;
-    public Rigidbody Rigid;
-    public float Rotation;
-    public bool isOnGround;
-    public float jumpForce;
+    private Rigidbody rb;
+    private SpriteRenderer sr;
+    private Sprite[] sprites = new Sprite[4];
+    private string[] sprite_names = { "proto girl forward", "proto girl backwards", "proto girl right", "proto girl left" };
+
     public int health = 20;
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log("Script running!");
-        Rigid = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
+        sr = GetComponent<SpriteRenderer>();
+
+        for (int i = 0;i < 4;i++)
+        {
+
+            sprites[i] = Resources.Load<Sprite>(sprite_names[i]);
+
+        }
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
 
-        moving();
-        Jumping();
-        Debug.Log(health);
+        Moving();
+
     }
 
-    public void moving()
+    public void Moving()
     {
-        z = Input.GetAxis("Vertical") * speed;
-       
 
-        z *= Time.deltaTime;
-       
-
-        Vector3 mouvment = new Vector3(x, 0, z);
-
-        Rigid.AddForce(mouvment * speed * Time.deltaTime);
-
-        //Go left
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A) )
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
-            Debug.Log("Left?");
+
             transform.Translate(Vector3.left * speed * Time.deltaTime);
+
+            sr.sprite = sprites[3];
         }
 
-        //Go right
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D) )
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector3.right * speed * Time.deltaTime);
+
+            sr.sprite = sprites[2];
         }
 
-        // Movement of translation along the object's z-axis
-        transform.Translate(x, 0, z);
-
-     
-    }
-
-    public void Jumping()
-    {
-
-        if (Input.GetKey(KeyCode.Space) && isOnGround)
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
-            Rigid.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isOnGround = false;
-            Debug.Log("jump");
-        }
-    }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Ground")
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+
+            sr.sprite = sprites[1];
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
-            isOnGround = true;
+
+            transform.Translate(Vector3.back * speed * Time.deltaTime);
+
+            sr.sprite = sprites[0];
 
         }
+
+
     }
+
 }
