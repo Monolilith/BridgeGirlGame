@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement1 : MonoBehaviour
 {
-    public float x;
-    public float z;
+
     public float speed;
-    public Rigidbody Rigid;
-    public float Rotation;
+    private Rigidbody rb;
+    private SpriteRenderer sr;
+    private Sprite[] sprites;
+    private string path = "";
+    private int currentSprite = 0;
     public bool isOnGround;
     public float jumpForce;
     public int health = 20;
@@ -16,47 +18,55 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         Debug.Log("Script running!");
-        Rigid = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
+        sr = GetComponent<SpriteRenderer>();
+
+        sprites = Resources.LoadAll<Sprite>(path);
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
 
-        moving();
+        Moving();
         Jumping();
-        //Debug.Log(health);
+
     }
 
-    public void moving()
+    public void Moving()
     {
-        z = Input.GetAxis("Vertical") * speed;
-       
-
-        z *= Time.deltaTime;
-       
-
-        Vector3 mouvment = new Vector3(x, 0, z);
-
-        Rigid.AddForce(mouvment * speed * Time.deltaTime);
 
         //Go left
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A) )
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
-            Debug.Log("Left?");
+
             transform.Translate(Vector3.left * speed * Time.deltaTime);
+            currentSprite += 1;
         }
 
         //Go right
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D) )
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector3.right * speed * Time.deltaTime);
         }
 
-        // Movement of translation along the object's z-axis
-        transform.Translate(x, 0, z);
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+        {
 
-     
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+        {
+
+            transform.Translate(Vector3.back * speed * Time.deltaTime);
+
+        }
+
+        sr.sprite = sprites[currentSprite];
+
+
     }
 
     public void Jumping()
@@ -64,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space) && isOnGround)
         {
-            Rigid.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
             Debug.Log("jump");
         }
