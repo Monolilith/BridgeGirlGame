@@ -8,8 +8,13 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     private Rigidbody rb;
     private SpriteRenderer sr;
-    private Sprite[] sprites = new Sprite[4];
-    private string[] sprite_names = { "proto girl forward", "proto girl backwards", "proto girl right", "proto girl left" };
+    private Animator anim;
+
+    private bool forward = true, backward = false, right = false, left = false;
+    private bool moving = false;
+    private bool fire = false; 
+
+    private Vector3 world_pos;
 
     public int health = 5;
 
@@ -29,13 +34,9 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("Script running!");
         rb = GetComponent<Rigidbody>();
         sr = GetComponentInChildren<SpriteRenderer>();
+        anim = GetComponentInChildren<Animator>();
 
-        for (int i = 0;i < 4;i++)
-        {
-
-            sprites[i] = Resources.Load<Sprite>(sprite_names[i]);
-
-        }
+        anim.Play("face_forward", 0, 0); // Default animation the player has
 
        
     }
@@ -43,46 +44,219 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
    void Update()
     {
+
         DashInput();
         Moving();
+        Animate();
         
     }
 
     public void Moving()
     {
 
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+        Vector3 mouse_pos = Input.mousePosition;
+        mouse_pos.z = Camera.main.nearClipPlane;
+        world_pos = Camera.main.ScreenToWorldPoint(mouse_pos);
+        Debug.Log(transform.position);
+        Debug.Log(world_pos);
+        if (Input.GetMouseButtonDown(0))
         {
 
-            transform.Translate(Vector3.left * speed * Time.deltaTime);
-
-            sr.sprite = sprites[3];
-        }
-
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
-        {
-            transform.Translate(Vector3.right * speed * Time.deltaTime);
-
-            sr.sprite = sprites[2];
-        }
-
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
-        {
-
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
-
-            sr.sprite = sprites[1];
-        }
-
-        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
-        {
-
-            transform.Translate(Vector3.back * speed * Time.deltaTime);
-
-            sr.sprite = sprites[0];
+            fire = true;
+            moving = false;
 
         }
 
+        if (!fire)
+        {
+
+            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+            {
+
+                transform.Translate(Vector3.left * speed * Time.deltaTime);
+
+                left = true;
+                right = false;
+                forward = false;
+                backward = false;
+
+                moving = true;
+
+            }
+
+            else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+            {
+                transform.Translate(Vector3.right * speed * Time.deltaTime);
+
+                left = false;
+                right = true;
+                forward = false;
+                backward = false;
+
+                moving = true;
+            }
+
+            else if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+            {
+
+                transform.Translate(Vector3.forward * speed * Time.deltaTime);
+
+                left = false;
+                right = false;
+                forward = false;
+                backward = true;
+
+                moving = true;
+            }
+
+            else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+            {
+
+                transform.Translate(Vector3.back * speed * Time.deltaTime);
+
+                left = false;
+                right = false;
+                forward = true;
+                backward = false;
+
+                moving = true;
+
+            }
+
+            else
+            {
+
+                moving = false;
+
+            }
+
+        }
+
+    }
+
+    public void Animate()
+    {
+
+        if (!fire)
+        {
+
+            if (moving)
+            {
+
+                if (forward)
+                {
+
+                    if (anim.GetCurrentAnimatorStateInfo(0).IsName("walk_forward"))
+                    {
+
+                        return;
+
+                    }
+
+                    anim.Play("walk_forward", 0, 0);
+
+                }
+
+                if (backward)
+                {
+
+                    if (anim.GetCurrentAnimatorStateInfo(0).IsName("walk_backward"))
+                    {
+
+                        return;
+
+                    }
+
+                    anim.Play("walk_backward", 0, 0);
+
+                }
+
+                if (right)
+                {
+
+                    if (anim.GetCurrentAnimatorStateInfo(0).IsName("walk_right"))
+                    {
+
+                        return;
+
+                    }
+                    anim.Play("walk_right", 0, 0);
+
+                }
+
+                if (left)
+                {
+
+                    if (anim.GetCurrentAnimatorStateInfo(0).IsName("walk_left"))
+                    {
+
+                        return;
+
+                    }
+
+                    anim.Play("walk_left", 0, 0);
+
+                }
+
+            }
+
+            else
+            {
+
+                if (forward)
+                {
+
+                    anim.Play("face_forward", 0, 0);
+
+                }
+
+                if (backward)
+                {
+
+                    anim.Play("face_backward", 0, 0);
+
+                }
+
+                if (right)
+                {
+
+                    anim.Play("face_right", 0, 0);
+
+                }
+
+                if (left)
+                {
+
+                    anim.Play("face_left", 0, 0);
+
+                }
+
+            }
+
+        }
+
+        else
+        {
+
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("shoot_forward"))
+            {
+                
+                if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !anim.IsInTransition(0))
+                {
+
+                    forward = true;
+
+                    fire = false;
+
+                }
+
+                return; 
+
+            }
+
+            anim.Play("shoot_forward", 0, 0);
+
+        }
     }
 
     public void DashInput()
