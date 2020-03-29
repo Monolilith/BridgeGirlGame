@@ -13,7 +13,15 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID DRAW_BOW = 2590733006U;
+        static const AkUniqueID FIRE_ARROW = 2638661999U;
+        static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID GAMEPLAY_MUSIC = 2322231365U;
+        static const AkUniqueID MONSTER_BREATH_NEARBY = 2827716032U;
+        static const AkUniqueID MONSTER_DAMAGE = 3498479171U;
+        static const AkUniqueID MONSTER_DEATH = 3534274334U;
+        static const AkUniqueID PLAYER_DAMAGE = 2074073782U;
+        static const AkUniqueID TITLE_SEQUENCE = 3365447687U;
         static const AkUniqueID TO_CORRIDOR = 698227667U;
         static const AkUniqueID TO_MAIN = 3277579866U;
     } // namespace EVENTS

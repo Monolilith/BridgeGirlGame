@@ -6,10 +6,13 @@
 				<SoundBank Name="Main" ID="{1F24A419-DAFE-4D03-A9EF-4B4380B506A5}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Corridor" ID="{69897934-FD23-408C-8D03-FE32DD0ADA09}" WorkUnitID="{6FB3914F-8429-4247-8021-63BA90E48224}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SFX" ID="{F1EF0174-E328-40C7-9DAE-A88E568DEA60}" WorkUnitID="{010704F7-191E-4AD6-836F-16340F222BFA}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Transition_to_Arena_140bpm_4-4_L1" ID="{40390E4C-A759-4100-8BF9-FE89B3B674AF}" WorkUnitID="{6FB3914F-8429-4247-8021-63BA90E48224}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music" ID="{D3EE8D16-1EB5-4222-AE35-638DDB4A826C}" WorkUnitID="{010704F7-191E-4AD6-836F-16340F222BFA}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="To_Main" ID="{BFDF51D1-D1FA-4318-A414-99D13A31A5A9}" WorkUnitID="{010704F7-191E-4AD6-836F-16340F222BFA}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="To_Corridor" ID="{B7AA41B5-888A-43D6-A1EA-8A17D9175828}" WorkUnitID="{010704F7-191E-4AD6-836F-16340F222BFA}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Gameplay_Music" ID="{98781F82-7C9E-46A3-BE7E-B42C540989E7}" WorkUnitID="{010704F7-191E-4AD6-836F-16340F222BFA}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Title_Sequence" ID="{2DAD5CEA-0414-46C1-81D6-C1B94B56C0E7}" WorkUnitID="{010704F7-191E-4AD6-836F-16340F222BFA}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Game_Theme" ID="{63D576FC-B24E-4A3A-BDE8-772C94FDA281}" WorkUnitID="{6FB3914F-8429-4247-8021-63BA90E48224}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Main_Theme" ID="{0032962A-37D6-4D3A-AA3C-CEF921DEEBB6}" WorkUnitID="{6FB3914F-8429-4247-8021-63BA90E48224}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

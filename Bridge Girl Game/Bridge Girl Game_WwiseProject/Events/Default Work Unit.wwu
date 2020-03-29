@@ -64,6 +64,106 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Title_Sequence" ID="{2DAD5CEA-0414-46C1-81D6-C1B94B56C0E7}">
+							<ChildrenList>
+								<Action Name="" ID="{38C5E89C-2CDC-4C59-9DF3-DF8804C47446}" ShortID="84396636">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Title_110bpm_4-4_L14" ID="{A47939EF-3F9C-453A-9BAF-808B8EED0A01}" WorkUnitID="{6FB3914F-8429-4247-8021-63BA90E48224}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX" ID="{F1EF0174-E328-40C7-9DAE-A88E568DEA60}" ShortID="643532562">
+					<ChildrenList>
+						<Folder Name="Player" ID="{64596882-46DB-46EA-A6C1-8F8D31CAAE5D}" ShortID="667450063">
+							<ChildrenList>
+								<Event Name="Footsteps" ID="{5BDC998A-8022-4201-823E-93521BAB0345}">
+									<ChildrenList>
+										<Action Name="" ID="{BE40C952-DD02-40ED-898E-7D79C2203041}" ShortID="837554858">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Footsteps" ID="{41D53932-96C9-444F-A560-EE92B995C727}" WorkUnitID="{8DE7CCE2-B030-4E4A-82F2-F586C09BD764}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Player_Damage" ID="{8B65AF6B-C879-4628-BC6B-8568957B5280}">
+									<ChildrenList>
+										<Action Name="" ID="{E4CDBD36-8717-40E2-89AE-AB021B868C5E}" ShortID="439390632">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Player_Damage" ID="{2A98C479-5303-47FE-95DB-A946A60B0655}" WorkUnitID="{8DE7CCE2-B030-4E4A-82F2-F586C09BD764}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Fire_Arrow" ID="{A4D78F02-01A4-4265-9464-9B526B913C11}">
+									<ChildrenList>
+										<Action Name="" ID="{1AA1EBAB-AF5F-4122-BB1D-25A95589E33C}" ShortID="369099401">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Fire_Arrow" ID="{327967F3-20EB-4B11-926D-266F336E6B43}" WorkUnitID="{8DE7CCE2-B030-4E4A-82F2-F586C09BD764}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Draw_Bow" ID="{CAA624DA-5185-40C6-A6CC-0A789874AFE7}">
+									<ChildrenList>
+										<Action Name="" ID="{5AF64FD9-E9BD-468A-9B6B-BFB12D1D2101}" ShortID="951331331">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Draw_Bow" ID="{7969E17F-5244-412E-8558-B8E5577F97D9}" WorkUnitID="{8DE7CCE2-B030-4E4A-82F2-F586C09BD764}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Monster" ID="{8A0FA934-2389-40CD-AC82-7145AD20D484}" ShortID="427674152">
+							<ChildrenList>
+								<Event Name="Monster_Damage" ID="{F02171B0-6652-45AA-9911-518F79F72126}">
+									<ChildrenList>
+										<Action Name="" ID="{BF52C353-3B9C-4974-9B3A-84C89C32ADDE}" ShortID="974995199">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Monster_Damage" ID="{5B87A782-B78C-46D5-B75C-368C3F022607}" WorkUnitID="{8DE7CCE2-B030-4E4A-82F2-F586C09BD764}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Monster_Death" ID="{4E314728-82F6-4A73-88C3-146639076789}">
+									<ChildrenList>
+										<Action Name="" ID="{44ECC7A8-9D0D-4B0E-95FA-FE66755C6290}" ShortID="789939771">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Monster_Death" ID="{07FE2D98-BC16-4897-8898-53A1F75F2312}" WorkUnitID="{8DE7CCE2-B030-4E4A-82F2-F586C09BD764}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Monster_Breath_Nearby" ID="{238FF2B0-B380-4138-AC2D-F3EE3D854317}">
+									<ChildrenList>
+										<Action Name="" ID="{7FC12C3D-FE79-484B-902C-A7A30F4E0E38}" ShortID="446134526">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Monster_Breath_Nearby" ID="{4335D9D8-E253-4A19-AE4F-3E37C2B2D67E}" WorkUnitID="{8DE7CCE2-B030-4E4A-82F2-F586C09BD764}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

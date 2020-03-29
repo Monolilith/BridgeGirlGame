@@ -56,7 +56,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f70407011e19d64a836f16340f222bfa
     GuidInternal: 
-    m_lastTime: -8586161567429607719
+    m_lastTime: -8586161351557545185
     List:
     - name: Gameplay_Music
       guid: 821f78989e7ca346be7eb42c540989e7
@@ -83,6 +83,20 @@ MonoBehaviour:
       - ElementName: Music
         ObjectType: 3
       Path: Default Work Unit\Music\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Title_Sequence
+      guid: ea5cad2d1404c14681d6c1b94b56c0e7
+      id: 3365447687
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Title_Sequence
+        ObjectType: 3
+      Path: Default Work Unit\Music\Title_Sequence
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

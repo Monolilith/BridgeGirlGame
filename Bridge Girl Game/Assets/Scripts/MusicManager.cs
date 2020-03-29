@@ -68,8 +68,8 @@ public class MusicManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //CurrentTrack.SetValue();
         CurrentTrack.Post(gameObject);
+        //OnTriggerEnterState.SetValue();
     }
 
     // Update is called once per frame
