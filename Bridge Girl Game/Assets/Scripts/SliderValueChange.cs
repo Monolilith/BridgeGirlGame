@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class SliderValueChange : MonoBehaviour
 {
 
-    public int currentVal;
+    public int currentVal = 5;
+    private int pushVal;
     //public int newVal;
 
     private Slider bar;
@@ -15,12 +16,15 @@ public class SliderValueChange : MonoBehaviour
     void Start()
     {
         bar = GetComponent<Slider>();
+        currentVal = 5;
     }
 
 
     public void MinusOne()
     {
-        Minus(1);
+        pushVal = currentVal - 1;
+        StartCoroutine(Minus(pushVal));
+        Debug.Log("PushVal: " + pushVal);
     }
 
     void RestoreTotal(int total)
@@ -30,6 +34,7 @@ public class SliderValueChange : MonoBehaviour
 
     public IEnumerator Minus(int newVal)
     {
+        Debug.Log("Minus coroutine running!");
         for(float i = currentVal; i > newVal; i-= 0.1f)
         {
             bar.value = i;
