@@ -18,7 +18,7 @@ public class SliderValueChange : MonoBehaviour
     }
 
 
-    void MinusOne()
+    public void MinusOne()
     {
         Minus(1);
     }

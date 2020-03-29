@@ -28,7 +28,7 @@ void Update()
 {
     CheckRad();
     Death();
-    hp.value = health;
+    //hp.value = health;
     
 }
 

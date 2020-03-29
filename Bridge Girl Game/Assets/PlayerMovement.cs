@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sr;
     private Animator anim;
 
+    public SliderValueChange sliderVal;
+
     private bool forward = true, backward = false, right = false, left = false;
     private bool moving = false;
     private bool fire = false; 
@@ -36,6 +38,8 @@ public class PlayerMovement : MonoBehaviour
         sr = GetComponentInChildren<SpriteRenderer>();
         anim = GetComponentInChildren<Animator>();
 
+        sliderVal = GameObject.FindGameObjectWithTag("HealthSlider").GetComponent<SliderValueChange>();
+
         anim.Play("face_forward", 0, 0); // Default animation the player has
 
        
@@ -58,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
         mouse_pos.z = Camera.main.nearClipPlane;
         world_pos = Camera.main.ScreenToWorldPoint(mouse_pos);
         Debug.Log(transform.position);
-        Debug.Log(world_pos);
+        //Debug.Log(world_pos);
         if (Input.GetMouseButtonDown(0))
         {
 
@@ -300,10 +304,12 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
       
-        if (other.gameObject.tag == "enemy" && CanGetHurt == true)
+        if (other.gameObject.tag == "Enemy" && CanGetHurt == true)
         {
 
             health -= 1;
+            sliderVal.MinusOne();
+
         }
 
 
