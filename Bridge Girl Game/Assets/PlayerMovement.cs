@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 mouse_pos = Input.mousePosition;
         mouse_pos.z = Camera.main.nearClipPlane;
         world_pos = Camera.main.ScreenToWorldPoint(mouse_pos);
-        Debug.Log(transform.position);
+        //Debug.Log(transform.position);
         //Debug.Log(world_pos);
         if (Input.GetMouseButtonDown(0))
         {
