@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
 
     public SliderValueChange sliderVal;
+    public SliderValueChange dashSlider;
 
     private bool forward = true, backward = false, right = false, left = false;
     private bool moving = false;
@@ -39,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
 
         sliderVal = GameObject.FindGameObjectWithTag("HealthSlider").GetComponent<SliderValueChange>();
+        dashSlider = GameObject.FindGameObjectWithTag("DashSlider").GetComponent<SliderValueChange>();
 
         anim.Play("face_forward", 0, 0); // Default animation the player has
 
@@ -273,6 +275,7 @@ public class PlayerMovement : MonoBehaviour
             CanDash = false;
             CanGetHurt = false;
             DashX();
+            dashSlider.MinusOne();
             StartCoroutine(CoolDown());
         }
     }
@@ -298,6 +301,8 @@ public class PlayerMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(5f);
         CanDash = true;
+        dashSlider.RestoreTotal(1);
+
         yield break;
     }
 
@@ -311,7 +316,6 @@ public class PlayerMovement : MonoBehaviour
             sliderVal.MinusOne();
 
         }
-
 
     }
 

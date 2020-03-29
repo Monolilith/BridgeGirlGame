@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SliderValueChange : MonoBehaviour
 {
 
-    public int currentVal = 5;
+    public int currentVal;
     private int pushVal;
     //public int newVal;
 
@@ -16,7 +16,6 @@ public class SliderValueChange : MonoBehaviour
     void Start()
     {
         bar = GetComponent<Slider>();
-        currentVal = 5;
     }
 
 
@@ -27,7 +26,7 @@ public class SliderValueChange : MonoBehaviour
         Debug.Log("PushVal: " + pushVal);
     }
 
-    void RestoreTotal(int total)
+    public void RestoreTotal(int total)
     {
         Restore(total);
     }
@@ -50,5 +49,6 @@ public class SliderValueChange : MonoBehaviour
             bar.value = i;
             yield return new WaitForSeconds(0.01f);
         }
+        currentVal = restoreValue;
     }
 }
