@@ -40,7 +40,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 8292fc9fbe0a4542934d02bdc09b2873
     GuidInternal: 
-    m_lastTime: -8586161594319911711
+    m_lastTime: -8586161087866768217
     List:
     - name: Main
       guid: 19a4241ffeda034da9ef4b4380b506a5
@@ -56,8 +56,56 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f70407011e19d64a836f16340f222bfa
     GuidInternal: 
-    m_lastTime: -8586161351557545185
+    m_lastTime: -8586161088653935429
     List:
+    - name: Draw_Bow
+      guid: da24a6ca8551c640a6cc0a789874afe7
+      id: 2590733006
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Draw_Bow
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Player\Draw_Bow
+      maxAttenuation: 0
+      maxDuration: 0.46551
+      minDuration: 0.46551
+    - name: Fire_Arrow
+      guid: 028fd7a4a401654294649b526b913c11
+      id: 2638661999
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Fire_Arrow
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Player\Fire_Arrow
+      maxAttenuation: 0
+      maxDuration: 0.520816
+      minDuration: 0.520816
+    - name: Footsteps
+      guid: 8a99dc5b22800142823e93521bab0345
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Footsteps
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Player\Footsteps
+      maxAttenuation: 0
+      maxDuration: 0.265926
+      minDuration: 0.226214
     - name: Gameplay_Music
       guid: 821f78989e7ca346be7eb42c540989e7
       id: 2322231365
@@ -72,6 +120,70 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Monster
+      guid: 34a90f8a8923cd40ac827145ad20d484
+      id: 2376328173
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Monster
+        ObjectType: 4
+      - ElementName: Monster
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Monster\Monster
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Monster_Breath_Nearby
+      guid: b0f28f2380b33841ac2df3ee3d854317
+      id: 2827716032
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Monster
+        ObjectType: 4
+      - ElementName: Monster_Breath_Nearby
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Monster\Monster_Breath_Nearby
+      maxAttenuation: 0
+      maxDuration: 2.920908
+      minDuration: 2.278499
+    - name: Monster_Damage
+      guid: b07121f05266aa459911518f79f72126
+      id: 3498479171
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Monster
+        ObjectType: 4
+      - ElementName: Monster_Damage
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Monster\Monster_Damage
+      maxAttenuation: 0
+      maxDuration: 0.642934
+      minDuration: 0.510297
+    - name: Monster_Death
+      guid: 2847314ef682734a88c3146639076789
+      id: 3534274334
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Monster
+        ObjectType: 4
+      - ElementName: Monster_Death
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Monster\Monster_Death
+      maxAttenuation: 0
+      maxDuration: 1.68013
+      minDuration: 1.372595
     - name: Music
       guid: 168deed3b51e2242ae35638ddb4a826c
       id: 3991942870
@@ -83,6 +195,52 @@ MonoBehaviour:
       - ElementName: Music
         ObjectType: 3
       Path: Default Work Unit\Music\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player
+      guid: 82685964db46ea46a6c18f8d31caae5d
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Player
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Player\Player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player_Damage
+      guid: 6baf658b79c82846bc6b8568957b5280
+      id: 2074073782
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Player_Damage
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Player\Player_Damage
+      maxAttenuation: 0
+      maxDuration: 0.664308
+      minDuration: 0.509301
+    - name: SFX
+      guid: 7401eff128e3c7409daea88e568dea60
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: SFX
+        ObjectType: 3
+      Path: Default Work Unit\SFX\SFX
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -98,8 +256,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Music\Title_Sequence
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 31.545488
+      minDuration: 31.545488
     - name: To_Corridor
       guid: b541aab78a88d643a1ea8a17d9175828
       id: 698227667
@@ -221,8 +379,7 @@ MonoBehaviour:
   ExpandedItems:
   - /Bridge Girl Game_WwiseProject
   - /Bridge Girl Game_WwiseProject/Events
-  - /Bridge Girl Game_WwiseProject/Events/Default Work Unit
-  - /Bridge Girl Game_WwiseProject/Events/Default Work Unit/Music
+  - /Bridge Girl Game_WwiseProject/SoundBanks
   - /Bridge Girl Game_WwiseProject/States
   - /Bridge Girl Game_WwiseProject/States/Default Work Unit
   - /Bridge Girl Game_WwiseProject/States/Default Work Unit/Music_State

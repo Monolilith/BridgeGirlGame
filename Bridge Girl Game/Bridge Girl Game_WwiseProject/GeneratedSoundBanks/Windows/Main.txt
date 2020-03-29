@@ -21,7 +21,7 @@ State	ID	Name	State Group			Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	305312099	Main_Intro_140bpm_4-4_L5_P1	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Windows\SFX\Main_Intro_140bpm_4-4_L5_P1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Main_Theme\Main_Intro_140bpm_4-4_L5_P1\Main_Intro_140bpm_4-4_L5_P1		1689732
-	385012114	Draw_Bow	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Windows\SFX\Draw_Bow_07F7DAD9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Draw_Bow		82180
+	385012114	Draw_Bow	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Windows\SFX\Draw_Bow_63C72984.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Draw_Bow		82180
 	392241202	Monster_Damage_1	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Windows\SFX\Monster_Damage2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster_Damage\Monster_Damage_1		101104
 	431903860	Transition_to_Arena_140bpm_4-4_L1	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Windows\SFX\Transition_to_Arena_140bpm_4-4_L1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Transition_to_Arena_140bpm_4-4_L1\Transition_to_Arena_140bpm_4-4_L1		478864
 	502220271	A1_A2	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Windows\SFX\Main_A2_140bpm_4-4_L16_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Main_Theme\Theme_A\A1_A2		4989660

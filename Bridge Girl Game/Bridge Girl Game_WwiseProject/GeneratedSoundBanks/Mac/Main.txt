@@ -1,7 +1,15 @@
 Event	ID	Name			Wwise Object Path	Notes
 	698227667	To_Corridor			\Default Work Unit\Music\To_Corridor	
+	2074073782	Player_Damage			\Default Work Unit\SFX\Player\Player_Damage	
 	2322231365	Gameplay_Music			\Default Work Unit\Music\Gameplay_Music	
+	2385628198	Footsteps			\Default Work Unit\SFX\Player\Footsteps	
+	2590733006	Draw_Bow			\Default Work Unit\SFX\Player\Draw_Bow	
+	2638661999	Fire_Arrow			\Default Work Unit\SFX\Player\Fire_Arrow	
+	2827716032	Monster_Breath_Nearby			\Default Work Unit\SFX\Monster\Monster_Breath_Nearby	
 	3277579866	To_Main			\Default Work Unit\Music\To_Main	
+	3365447687	Title_Sequence			\Default Work Unit\Music\Title_Sequence	
+	3498479171	Monster_Damage			\Default Work Unit\SFX\Monster\Monster_Damage	
+	3534274334	Monster_Death			\Default Work Unit\SFX\Monster\Monster_Death	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	3826569560	Music_State			\Default Work Unit\Music_State	
@@ -13,10 +21,18 @@ State	ID	Name	State Group			Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	305312099	Main_Intro_140bpm_4-4_L5_P1	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Mac\SFX\Main_Intro_140bpm_4-4_L5_P1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Main_Theme\Main_Intro_140bpm_4-4_L5_P1\Main_Intro_140bpm_4-4_L5_P1		1689732
+	385012114	Draw_Bow	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Mac\SFX\Draw_Bow_63C72984.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Draw_Bow		82180
+	392241202	Monster_Damage_1	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Mac\SFX\Monster_Damage2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster_Damage\Monster_Damage_1		101104
 	431903860	Transition_to_Arena_140bpm_4-4_L1	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Mac\SFX\Transition_to_Arena_140bpm_4-4_L1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Transition_to_Arena_140bpm_4-4_L1\Transition_to_Arena_140bpm_4-4_L1		478864
-	502220271	A1_A2	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Mac\SFX\Main_A2_140bpm_4-4_L16_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Main_Theme\Theme_A\A1_A2		5140860
+	502220271	A1_A2	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Mac\SFX\Main_A2_140bpm_4-4_L16_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Main_Theme\Theme_A\A1_A2		4989660
+	539575870	Wraith_Breath_Nearby_1	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Mac\SFX\Wraith_Breath_Nearby_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster_Breath_Nearby\Wraith_Breath_Nearby_1		451212
 	639032438	Corridor_140bpm_4-4_L4	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Mac\SFX\Corridor_140bpm_4-4_L4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Corridor\Corridor_140bpm_4-4_L4\Corridor_140bpm_4-4_L4		1386064
+	711845861	Title_110bpm_4-4_L14	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Mac\SFX\Title_110bpm_4-4_L14_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Title_Theme\Title_110bpm_4-4_L14\Title_110bpm_4-4_L14		5564688
+	838132379	Monster_Death_1	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Mac\SFX\Monster_Death_Revised_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster_Death\Monster_Death_1		264104
+	944025209	Player_Step_1	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Mac\SFX\Step_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Player_Step_1		43080
 	975185599	A1_A2	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Mac\SFX\Main_A1_140bpm_4-4_L16_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Main_Theme\Theme_A\A1_A2		5140872
 	989594269	B1_B2	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Mac\SFX\Main_B1_140bpm_4-4_L16_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Main_Theme\Theme_B\B1_B2		4914060
+	1006079114	Player_damage_1	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Mac\SFX\Player_damage_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Damage\Player_damage_1		105676
 	1016860185	B1_B2	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Mac\SFX\Main_B2_140bpm_4-4_L16_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Main_Theme\Theme_B\B1_B2		5140860
+	1049225705	Fire_Arrow	D:\Fabian_Files\Unity_Files\BridgeGirlGame\Bridge Girl Game\Bridge Girl Game_WwiseProject\.cache\Mac\SFX\Fire_Arrow2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Fire_Arrow		91936
 

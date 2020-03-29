@@ -21,6 +21,30 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2590733006" Name="Draw_Bow" ObjectPath="\Events\Default Work Unit\SFX\Player\Draw_Bow" DurationType="OneShot" DurationMin="0.465510" DurationMax="0.465510">
+					<IncludedMemoryFiles>
+						<File Id="385012114" Language="SFX">
+							<ShortName>Draw_Bow.wav</ShortName>
+							<Path>SFX\Draw_Bow_63C72984.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2638661999" Name="Fire_Arrow" ObjectPath="\Events\Default Work Unit\SFX\Player\Fire_Arrow" DurationType="OneShot" DurationMin="0.520816" DurationMax="0.520816">
+					<IncludedMemoryFiles>
+						<File Id="1049225705" Language="SFX">
+							<ShortName>Fire_Arrow2.wav</ShortName>
+							<Path>SFX\Fire_Arrow2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\SFX\Player\Footsteps" DurationType="OneShot" DurationMin="0.226214" DurationMax="0.265926">
+					<IncludedMemoryFiles>
+						<File Id="944025209" Language="SFX">
+							<ShortName>Step.wav</ShortName>
+							<Path>SFX\Step_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2322231365" Name="Gameplay_Music" ObjectPath="\Events\Default Work Unit\Music\Gameplay_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="305312099" Language="SFX">
@@ -64,6 +88,50 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="2827716032" Name="Monster_Breath_Nearby" ObjectPath="\Events\Default Work Unit\SFX\Monster\Monster_Breath_Nearby" DurationType="OneShot" DurationMin="2.278499" DurationMax="2.920908">
+					<IncludedMemoryFiles>
+						<File Id="539575870" Language="SFX">
+							<ShortName>Wraith_Breath_Nearby.wav</ShortName>
+							<Path>SFX\Wraith_Breath_Nearby_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3498479171" Name="Monster_Damage" ObjectPath="\Events\Default Work Unit\SFX\Monster\Monster_Damage" DurationType="OneShot" DurationMin="0.510297" DurationMax="0.642934">
+					<IncludedMemoryFiles>
+						<File Id="392241202" Language="SFX">
+							<ShortName>Monster_Damage2.wav</ShortName>
+							<Path>SFX\Monster_Damage2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3534274334" Name="Monster_Death" ObjectPath="\Events\Default Work Unit\SFX\Monster\Monster_Death" DurationType="OneShot" DurationMin="1.372595" DurationMax="1.680130">
+					<IncludedMemoryFiles>
+						<File Id="838132379" Language="SFX">
+							<ShortName>Monster_Death_Revised.wav</ShortName>
+							<Path>SFX\Monster_Death_Revised_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2074073782" Name="Player_Damage" ObjectPath="\Events\Default Work Unit\SFX\Player\Player_Damage" DurationType="OneShot" DurationMin="0.509301" DurationMax="0.664308">
+					<IncludedMemoryFiles>
+						<File Id="1006079114" Language="SFX">
+							<ShortName>Player_damage.wav</ShortName>
+							<Path>SFX\Player_damage_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3365447687" Name="Title_Sequence" ObjectPath="\Events\Default Work Unit\Music\Title_Sequence" DurationType="OneShot" DurationMin="31.545488" DurationMax="31.545488">
+					<IncludedMemoryFiles>
+						<File Id="305312099" Language="SFX">
+							<ShortName>Main_Intro_140bpm_4-4_L5_P1.wav</ShortName>
+							<Path>SFX\Main_Intro_140bpm_4-4_L5_P1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="711845861" Language="SFX">
+							<ShortName>Title_110bpm_4-4_L14.wav</ShortName>
+							<Path>SFX\Title_110bpm_4-4_L14_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="698227667" Name="To_Corridor" ObjectPath="\Events\Default Work Unit\Music\To_Corridor" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3277579866" Name="To_Main" ObjectPath="\Events\Default Work Unit\Music\To_Main" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
