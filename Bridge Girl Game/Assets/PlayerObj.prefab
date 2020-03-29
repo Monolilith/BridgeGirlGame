@@ -110,7 +110,7 @@ SpriteRenderer:
   m_Size: {x: 4.75, y: 11.46}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &6596345
@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 2547267185691331535}
   - component: {fileID: 2547267185691331532}
   - component: {fileID: 2547267185691331534}
+  - component: {fileID: 5732182812490449712}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -207,3 +208,22 @@ MonoBehaviour:
   DashSpeed: 10
   CanDash: 1
   CanGetHurt: 0
+--- !u!95 &5732182812490449712
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2547267185691331533}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
