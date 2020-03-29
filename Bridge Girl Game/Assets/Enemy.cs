@@ -58,19 +58,7 @@ private void Death()
       
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        GameObject Player = GameObject.FindWithTag("Player");
-        PlayerMovement Phealth = Player.GetComponent<PlayerMovement>();
-
-        if (other.gameObject.tag == "Player")
-        {
-            
-            Phealth.health -= 2;
-        }
-
-      
-    }
+  
 }
 
 
