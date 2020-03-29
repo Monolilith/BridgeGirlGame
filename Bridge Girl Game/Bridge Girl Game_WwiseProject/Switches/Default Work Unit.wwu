@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F83AEFD0-CB25-452F-ACE7-CD5E73CF4D58}" SchemaVersion="97">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{F83AEFD0-CB25-452F-ACE7-CD5E73CF4D58}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F83AEFD0-CB25-452F-ACE7-CD5E73CF4D58}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Gameplay" ID="{28B67662-F3EA-438D-98F1-A67F21858CEA}">
+					<ChildrenList>
+						<Switch Name="Main_Theme" ID="{96A49D06-42EF-4BEF-A8C4-53188A0438C3}"/>
+						<Switch Name="Corridor_Theme" ID="{60707209-3F82-46DE-86CB-FCDA02B10358}"/>
+						<Switch Name="Transition_Corridor_to_Main" ID="{FACF0AC6-1B29-442A-BD4C-7549E9C32EDE}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

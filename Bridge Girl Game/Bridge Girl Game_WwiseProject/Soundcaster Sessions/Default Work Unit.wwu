@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8DB3CE39-E383-4F4D-84EF-33247D398D7B}" SchemaVersion="97">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{8DB3CE39-E383-4F4D-84EF-33247D398D7B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8DB3CE39-E383-4F4D-84EF-33247D398D7B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Test" ID="{23F2380A-D0A3-4005-89B3-652A305B9379}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Gameplay_Music" ID="{98781F82-7C9E-46A3-BE7E-B42C540989E7}" WorkUnitID="{010704F7-191E-4AD6-836F-16340F222BFA}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="To_Corridor" ID="{B7AA41B5-888A-43D6-A1EA-8A17D9175828}" WorkUnitID="{010704F7-191E-4AD6-836F-16340F222BFA}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="To_Main" ID="{BFDF51D1-D1FA-4318-A414-99D13A31A5A9}" WorkUnitID="{010704F7-191E-4AD6-836F-16340F222BFA}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Main_State" ID="{F4B1C631-B56C-44D4-87B8-D02AF785D8AD}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Corridor_Theme" ID="{60707209-3F82-46DE-86CB-FCDA02B10358}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

@@ -21,15 +21,11 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2557777556" Name="Main_Theme" ObjectPath="\Events\Default Work Unit\Main_Theme" DurationType="Infinite">
+				<Event Id="2322231365" Name="Gameplay_Music" ObjectPath="\Events\Default Work Unit\Music\Gameplay_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="305312099" Language="SFX">
 							<ShortName>Main_Intro_140bpm_4-4_L5_P1.wav</ShortName>
 							<Path>SFX\Main_Intro_140bpm_4-4_L5_P1_D79FB2B7.wem</Path>
-						</File>
-						<File Id="431903860" Language="SFX">
-							<ShortName>Transition_to_Arena_140bpm_4-4_L1.wav</ShortName>
-							<Path>SFX\Transition_to_Arena_140bpm_4-4_L1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="502220271" Language="SFX">
 							<ShortName>Main_A2_140bpm_4-4_L16.wav</ShortName>
@@ -52,7 +48,25 @@
 							<Path>SFX\Main_B2_140bpm_4-4_L16_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{8C1F294A-82B9-46F7-BCF2-C3C1258DF1F0}">
+							<Media>
+								<File Id="639032438"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{F4B1C631-B56C-44D4-87B8-D02AF785D8AD}">
+							<Media>
+								<File Id="975185599"/>
+								<File Id="502220271"/>
+								<File Id="989594269"/>
+								<File Id="1016860185"/>
+								<File Id="305312099"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
+				<Event Id="698227667" Name="To_Corridor" ObjectPath="\Events\Default Work Unit\Music\To_Corridor" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3277579866" Name="To_Main" ObjectPath="\Events\Default Work Unit\Music\To_Main" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="305312099" Language="SFX">
@@ -84,6 +98,15 @@
 					<Path>SFX\Main_B2_140bpm_4-4_L16_D79FB2B7.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
+			<StateGroups>
+				<StateGroup Id="3826569560" Name="Music_State" ObjectPath="\States\Default Work Unit\Music_State">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music_State\None"/>
+						<State Id="470836253" Name="Corridor_State" ObjectPath="\States\Default Work Unit\Music_State\Corridor_State"/>
+						<State Id="128436828" Name="Main_State" ObjectPath="\States\Default Work Unit\Music_State\Main_State"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

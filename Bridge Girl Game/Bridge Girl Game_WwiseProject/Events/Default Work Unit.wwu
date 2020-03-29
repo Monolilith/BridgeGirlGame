@@ -3,17 +3,69 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{010704F7-191E-4AD6-836F-16340F222BFA}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Main_Theme" ID="{E740D90E-2801-4042-89F8-24F91BCCB476}">
+				<Folder Name="Music" ID="{D3EE8D16-1EB5-4222-AE35-638DDB4A826C}" ShortID="509831434">
 					<ChildrenList>
-						<Action Name="" ID="{6DEA32C3-C494-4512-84F2-39FCC51DD603}" ShortID="917524999">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Main_Theme" ID="{0032962A-37D6-4D3A-AA3C-CEF921DEEBB6}" WorkUnitID="{6FB3914F-8429-4247-8021-63BA90E48224}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="To_Corridor" ID="{B7AA41B5-888A-43D6-A1EA-8A17D9175828}">
+							<ChildrenList>
+								<Action Name="" ID="{D6019843-D13A-461B-A05F-3CEA65F94824}" ShortID="265553352">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Corridor_State" ID="{8C1F294A-82B9-46F7-BCF2-C3C1258DF1F0}" WorkUnitID="{A7E5F147-217E-4FEF-8D4C-DE77E72364C9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="To_Main" ID="{BFDF51D1-D1FA-4318-A414-99D13A31A5A9}">
+							<ChildrenList>
+								<Action Name="" ID="{7215BB85-704F-4C67-A499-0176F8156CBD}" ShortID="899967744">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main_State" ID="{F4B1C631-B56C-44D4-87B8-D02AF785D8AD}" WorkUnitID="{A7E5F147-217E-4FEF-8D4C-DE77E72364C9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Gameplay_Music" ID="{98781F82-7C9E-46A3-BE7E-B42C540989E7}">
+							<ChildrenList>
+								<Action Name="" ID="{76E2B282-65A2-4245-BAC0-01CFCDD45BCC}" ShortID="631718544">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Game_Theme" ID="{63D576FC-B24E-4A3A-BDE8-772C94FDA281}" WorkUnitID="{6FB3914F-8429-4247-8021-63BA90E48224}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E5DCB9B3-7AB8-47AA-88DF-FA0E56BF7814}" ShortID="731957514">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main_State" ID="{F4B1C631-B56C-44D4-87B8-D02AF785D8AD}" WorkUnitID="{A7E5F147-217E-4FEF-8D4C-DE77E72364C9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{850B8C30-C6F5-45BD-8BD9-9FB06ADA0F18}" ShortID="380040812">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Game_Theme" ID="{63D576FC-B24E-4A3A-BDE8-772C94FDA281}" WorkUnitID="{6FB3914F-8429-4247-8021-63BA90E48224}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

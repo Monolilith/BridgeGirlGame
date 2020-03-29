@@ -12,14 +12,205 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d0f64c53821aff4bae7d922495eb2fc, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
-  ExpandedItems: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: d04f886c7b27c14e8c2132baa520a360
+    GuidInternal: 
+    m_lastTime: -8586162401715779825
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: bbf2f0ed41003e4fbb3b22c0c71b1713
+    GuidInternal: 
+    m_lastTime: -8586162401715859924
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 8292fc9fbe0a4542934d02bdc09b2873
+    GuidInternal: 
+    m_lastTime: -8586161594319911711
+    List:
+    - name: Main
+      guid: 19a4241ffeda034da9ef4b4380b506a5
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      Path: Default Work Unit\Main
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: f70407011e19d64a836f16340f222bfa
+    GuidInternal: 
+    m_lastTime: -8586161567429607719
+    List:
+    - name: Gameplay_Music
+      guid: 821f78989e7ca346be7eb42c540989e7
+      id: 2322231365
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Gameplay_Music
+        ObjectType: 3
+      Path: Default Work Unit\Music\Gameplay_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music
+      guid: 168deed3b51e2242ae35638ddb4a826c
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Music
+        ObjectType: 3
+      Path: Default Work Unit\Music\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: To_Corridor
+      guid: b541aab78a88d643a1ea8a17d9175828
+      id: 698227667
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: To_Corridor
+        ObjectType: 3
+      Path: Default Work Unit\Music\To_Corridor
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: To_Main
+      guid: d151dfbffad11843a41499d13a31a5a9
+      id: 3277579866
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: To_Main
+        ObjectType: 3
+      Path: Default Work Unit\Music\To_Main
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: faa03d45d2cbc44d89873f310342cc6c
+    GuidInternal: 
+    m_lastTime: -8586162401715879525
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 47f1e5a77e21ef4f8d4cde77e72364c9
+    GuidInternal: 
+    m_lastTime: -8586161594590332076
+    List:
+    - name: Music_State
+      guid: cf311e36914b384ab51b718576f393af
+      id: 3826569560
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music_State
+        ObjectType: 9
+      Path: Default Work Unit\Music_State
+      values:
+      - name: Corridor_State
+        guid: 4a291f8cb982f746bcf2c3c1258df1f0
+        id: 470836253
+        PathAndIcons:
+        - ElementName: Corridor_State
+          ObjectType: 8
+      - name: Main_State
+        guid: 31c6b1f46cb5d44487b8d02af785d8ad
+        id: 128436828
+        PathAndIcons:
+        - ElementName: Main_State
+          ObjectType: 8
+      - name: None
+        guid: 4b9e00141492164a85c822828a1df966
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: d0ef3af825cb2f45ace7cd5e73cf4d58
+    GuidInternal: 
+    m_lastTime: -8586161689652863534
+    List:
+    - name: Gameplay
+      guid: 6276b628eaf38d4398f1a67f21858cea
+      id: 89505537
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Gameplay
+        ObjectType: 11
+      Path: Default Work Unit\Gameplay
+      values:
+      - name: Corridor_Theme
+        guid: 09727060823fde4686cbfcda02b10358
+        id: 3769669153
+        PathAndIcons:
+        - ElementName: Corridor_Theme
+          ObjectType: 10
+      - name: Main_Theme
+        guid: 069da496ef42ef4ba8c453188a0438c3
+        id: 2557777556
+        PathAndIcons:
+        - ElementName: Main_Theme
+          ObjectType: 10
+      - name: Transition_Corridor_to_Main
+        guid: c60acffa291b2a44bd4c7549e9c32ede
+        id: 3112872809
+        PathAndIcons:
+        - ElementName: Transition_Corridor_to_Main
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 61235ae960f7ed4b93e2e11f25708822
+    GuidInternal: 
+    m_lastTime: -8586162401715779825
+    List: []
+  ExpandedItems:
+  - /Bridge Girl Game_WwiseProject
+  - /Bridge Girl Game_WwiseProject/Events
+  - /Bridge Girl Game_WwiseProject/Events/Default Work Unit
+  - /Bridge Girl Game_WwiseProject/Events/Default Work Unit/Music
+  - /Bridge Girl Game_WwiseProject/States
+  - /Bridge Girl Game_WwiseProject/States/Default Work Unit
+  - /Bridge Girl Game_WwiseProject/States/Default Work Unit/Music_State
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

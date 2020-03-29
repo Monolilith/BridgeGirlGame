@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8DE7CCE2-B030-4E4A-82F2-F586C09BD764}" SchemaVersion="97">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{8DE7CCE2-B030-4E4A-82F2-F586C09BD764}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8DE7CCE2-B030-4E4A-82F2-F586C09BD764}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Player_Step" ID="{32D30E92-D9E8-4595-AB7A-0D9A31543B52}" ShortID="222326478">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C8D1A815-3942-4117-BB92-90079C0BC556}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EDF0F2BB-0041-4F3E-BB3B-22C0C71B1713}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Step" ID="{76E90407-7CDF-4B31-AAB6-A0182C0E690E}">
+							<Language>SFX</Language>
+							<AudioFile>Step.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="944025209"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Step" ID="{76E90407-7CDF-4B31-AAB6-A0182C0E690E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

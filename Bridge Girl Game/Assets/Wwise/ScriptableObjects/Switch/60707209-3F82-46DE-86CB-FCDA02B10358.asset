@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15eb554755867c04c8238fe309462274, type: 3}
+  m_Name: 60707209-3F82-46DE-86CB-FCDA02B10358
+  m_EditorClassIdentifier: 
+  objectName: Corridor_Theme
+  id: 3769669153
+  guid: 60707209-3F82-46DE-86CB-FCDA02B10358
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: e69884e74d02d01498e3c904e3cb0816,
+    type: 2}

@@ -11,6 +11,51 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID GAMEPLAY_MUSIC = 2322231365U;
+        static const AkUniqueID TO_CORRIDOR = 698227667U;
+        static const AkUniqueID TO_MAIN = 3277579866U;
+    } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace MUSIC_STATE
+        {
+            static const AkUniqueID GROUP = 3826569560U;
+
+            namespace STATE
+            {
+                static const AkUniqueID CORRIDOR_STATE = 470836253U;
+                static const AkUniqueID MAIN_STATE = 128436828U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace MUSIC_STATE
+
+    } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace GAMEPLAY
+        {
+            static const AkUniqueID GROUP = 89505537U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CORRIDOR_THEME = 3769669153U;
+                static const AkUniqueID MAIN_THEME = 2557777556U;
+                static const AkUniqueID TRANSITION_CORRIDOR_TO_MAIN = 3112872809U;
+            } // namespace SWITCH
+        } // namespace GAMEPLAY
+
+    } // namespace SWITCHES
+
+    namespace BANKS
+    {
+        static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID MAIN = 3161908922U;
+    } // namespace BANKS
+
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
