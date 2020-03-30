@@ -65,13 +65,14 @@ public class PlayerMovement : MonoBehaviour
         world_pos = Camera.main.ScreenToWorldPoint(mouse_pos);
         //Debug.Log(transform.position);
         //Debug.Log(world_pos);
-        if (Input.GetMouseButtonDown(0))
-        {
 
-            fire = true;
-            moving = false;
+        //if (Input.GetMouseButtonDown(0))
+        //{
 
-        }
+        //    fire = true;
+        //    moving = false;
+
+        //}
 
         if (!fire)
         {
@@ -302,8 +303,9 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(5f);
         CanDash = true;
         dashSlider.RestoreTotal(1);
+        Debug.Log("Restore kicked???");
 
-        yield break;
+        //yield break;
     }
 
     private void OnCollisionEnter(Collision other)

@@ -28,7 +28,8 @@ public class SliderValueChange : MonoBehaviour
 
     public void RestoreTotal(int total)
     {
-        Restore(total);
+        Debug.Log("Restore started???");
+        StartCoroutine(Restore(1));
     }
 
     public IEnumerator Minus(int newVal)
@@ -40,15 +41,20 @@ public class SliderValueChange : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         }
         currentVal = newVal;
+        bar.value = newVal;
+        yield return null;
     }
 
     public IEnumerator Restore(int restoreValue)
     {
+        Debug.Log("Restore running!");
         for (float i = currentVal; i < restoreValue; i += 0.2f)
         {
             bar.value = i;
             yield return new WaitForSeconds(0.01f);
         }
         currentVal = restoreValue;
+        bar.value = currentVal;
+        yield break;
     }
 }
