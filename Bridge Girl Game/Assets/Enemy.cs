@@ -6,17 +6,21 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 { 
-    public float force = 100;
+    //public float force = 100;
     public int health = 20;
     public Animator anim;
-    public Slider hp;
+    //public Slider hp;
     public Transform target;
     public float chaseRadius;
     public float attackRadius;
-    public Transform homePos;
+    //public Transform homePos;
     public Vector3 change;
     public float moveSpeed;
     public NavMeshAgent agent;
+
+    private bool pause;
+
+
     void Start()
     {
         target = GameObject.FindWithTag("Player").transform;
@@ -26,7 +30,9 @@ public class Enemy : MonoBehaviour
 // Update is called once per frame
 void Update()
 {
+        if(!pause)
     CheckRad();
+
     Death();
     //hp.value = health;
     
@@ -51,14 +57,31 @@ private void Death()
 
             agent.SetDestination(target.position);
 
-            //transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
             transform.LookAt(target.transform);
         }
 
       
     }
 
-  
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.tag == "Player")
+        {
+            StartCoroutine("PauseBoy");
+        }
+    }
+
+    public IEnumerator PauseBoy()
+    {
+        Debug.Log("Enemy pausing!");
+        pause = true;
+        yield return new WaitForSeconds(2);
+        pause = false;
+
+        yield break;
+    }
+
 }
 
 

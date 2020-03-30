@@ -224,8 +224,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   sliderVal: {fileID: 0}
-  health: 20
-  BaseSpeed: 0
+  dashSlider: {fileID: 0}
+  health: 5
+  BaseSpeed: 2
   DashSpeed: 10
   CanDash: 1
   CanGetHurt: 1

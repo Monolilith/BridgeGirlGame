@@ -10,12 +10,15 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sr;
     private Animator anim;
 
+    private Vector3 moveDirection;
+
     public SliderValueChange sliderVal;
     public SliderValueChange dashSlider;
 
     private bool forward = true, backward = false, right = false, left = false;
     private bool moving = false;
-    private bool fire = false; 
+    private bool fire = false;
+    private bool knockback = false;
 
     private Vector3 world_pos;
 
@@ -50,9 +53,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
    void Update()
     {
+        if (!knockback)
+        {
+            DashInput();
+            Moving();
+        }
 
-        DashInput();
-        Moving();
         Animate();
         
     }
@@ -317,8 +323,29 @@ public class PlayerMovement : MonoBehaviour
             health -= 1;
             sliderVal.MinusOne();
 
+            moveDirection = rb.transform.position - other.transform.position;
+            //rb.AddForce(moveDirection.normalized * 25f);
+
+            knockback = true;
+
+            StartCoroutine(Knockback(moveDirection));
+
         }
 
+    }
+
+    public IEnumerator Knockback(Vector3 pushDir)
+    {
+        Debug.Log("Knockback!");
+        for(int i = 10; i == 0; i--)
+        {
+            transform.position += pushDir.normalized * Time.deltaTime;
+            yield return new WaitForSeconds(0.01f);
+        }
+
+        //yield return new WaitForSeconds(1);
+        knockback = false;
+        yield break;
     }
 
 }
